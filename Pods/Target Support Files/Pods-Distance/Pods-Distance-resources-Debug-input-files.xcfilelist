@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Distance/Pods-Distance-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FlexLib/FlexLib.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle

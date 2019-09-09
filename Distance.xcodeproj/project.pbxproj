@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70BC8C832326778B006CD21E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BC8C822326778B006CD21E /* AppDelegate.m */; };
+		70BC8C862326778B006CD21E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BC8C852326778B006CD21E /* ViewController.m */; };
+		70BC8C892326778B006CD21E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BC8C872326778B006CD21E /* Main.storyboard */; };
+		70BC8C8B2326778C006CD21E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BC8C8A2326778C006CD21E /* Assets.xcassets */; };
+		70BC8C8E2326778C006CD21E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BC8C8C2326778C006CD21E /* LaunchScreen.storyboard */; };
+		70BC8C912326778C006CD21E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BC8C902326778C006CD21E /* main.m */; };
+		70BC8C9B2326778C006CD21E /* DistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BC8C9A2326778C006CD21E /* DistanceTests.m */; };
+		70BC8CA62326778C006CD21E /* DistanceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BC8CA52326778C006CD21E /* DistanceUITests.m */; };
+		70F0880F23269503008919CE /* TYCommonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0880E23269503008919CE /* TYCommonRequest.m */; };
+		70F08814232696F2008919CE /* DisLoginController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 70F08812232696F2008919CE /* DisLoginController.xml */; };
+		70F08815232696F2008919CE /* DisLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F08813232696F2008919CE /* DisLoginController.m */; };
+		70F08821232697D9008919CE /* TYSPNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0881B232697D8008919CE /* TYSPNaviBar.m */; };
+		70F08822232697D9008919CE /* TYSPNaviBar.xml in Resources */ = {isa = PBXBuildFile; fileRef = 70F0881C232697D8008919CE /* TYSPNaviBar.xml */; };
+		70F08823232697D9008919CE /* FlexBaseWithNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0881E232697D8008919CE /* FlexBaseWithNaviViewController.m */; };
+		70F08824232697D9008919CE /* FlexBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0881F232697D8008919CE /* FlexBasePresentViewController.m */; };
+		70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F08820232697D8008919CE /* FlexBaseWithoutNaviViewController.m */; };
+		70F0882923269854008919CE /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0882823269854008919CE /* tools.m */; };
+		72C1747D9AA0B1E59B8922F2 /* libPods-Distance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43AF4040EA1474BA445DFA /* libPods-Distance.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70BC8C972326778C006CD21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BC8C762326778B006CD21E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70BC8C7D2326778B006CD21E;
+			remoteInfo = Distance;
+		};
+		70BC8CA22326778C006CD21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BC8C762326778B006CD21E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70BC8C7D2326778B006CD21E;
+			remoteInfo = Distance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0866AE48D1F406BA5E1B77C4 /* Pods-Distance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distance.debug.xcconfig"; path = "Target Support Files/Pods-Distance/Pods-Distance.debug.xcconfig"; sourceTree = "<group>"; };
+		2B43AF4040EA1474BA445DFA /* libPods-Distance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Distance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BC8C7E2326778B006CD21E /* Distance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Distance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BC8C812326778B006CD21E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70BC8C822326778B006CD21E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70BC8C842326778B006CD21E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70BC8C852326778B006CD21E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70BC8C882326778B006CD21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70BC8C8A2326778C006CD21E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70BC8C8D2326778C006CD21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70BC8C8F2326778C006CD21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BC8C902326778C006CD21E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70BC8C962326778C006CD21E /* DistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BC8C9A2326778C006CD21E /* DistanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceTests.m; sourceTree = "<group>"; };
+		70BC8C9C2326778C006CD21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BC8CA12326778C006CD21E /* DistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BC8CA52326778C006CD21E /* DistanceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceUITests.m; sourceTree = "<group>"; };
+		70BC8CA72326778C006CD21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F0880B23269503008919CE /* UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDefine.h; sourceTree = "<group>"; };
+		70F0880D23269503008919CE /* TYCommonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCommonRequest.h; sourceTree = "<group>"; };
+		70F0880E23269503008919CE /* TYCommonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCommonRequest.m; sourceTree = "<group>"; };
+		70F08811232696F2008919CE /* DisLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisLoginController.h; sourceTree = "<group>"; };
+		70F08812232696F2008919CE /* DisLoginController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DisLoginController.xml; sourceTree = "<group>"; };
+		70F08813232696F2008919CE /* DisLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLoginController.m; sourceTree = "<group>"; };
+		70F08817232697D8008919CE /* FlexBaseWithNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexBaseWithNaviViewController.h; sourceTree = "<group>"; };
+		70F08818232697D8008919CE /* FlexBaseWithoutNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexBaseWithoutNaviViewController.h; sourceTree = "<group>"; };
+		70F08819232697D8008919CE /* FlexBasePresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexBasePresentViewController.h; sourceTree = "<group>"; };
+		70F0881B232697D8008919CE /* TYSPNaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSPNaviBar.m; sourceTree = "<group>"; };
+		70F0881C232697D8008919CE /* TYSPNaviBar.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TYSPNaviBar.xml; sourceTree = "<group>"; };
+		70F0881D232697D8008919CE /* TYSPNaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSPNaviBar.h; sourceTree = "<group>"; };
+		70F0881E232697D8008919CE /* FlexBaseWithNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexBaseWithNaviViewController.m; sourceTree = "<group>"; };
+		70F0881F232697D8008919CE /* FlexBasePresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexBasePresentViewController.m; sourceTree = "<group>"; };
+		70F08820232697D8008919CE /* FlexBaseWithoutNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexBaseWithoutNaviViewController.m; sourceTree = "<group>"; };
+		70F0882623269822008919CE /* DistancePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistancePch.pch; sourceTree = "<group>"; };
+		70F0882723269854008919CE /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
+		70F0882823269854008919CE /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
+		EBBA4DCCFFDF6EE386A18D9A /* Pods-Distance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distance.release.xcconfig"; path = "Target Support Files/Pods-Distance/Pods-Distance.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70BC8C7B2326778B006CD21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C1747D9AA0B1E59B8922F2 /* libPods-Distance.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C932326778C006CD21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C9E2326778C006CD21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70BC8C752326778B006CD21E = {
+			isa = PBXGroup;
+			children = (
+				70BC8C802326778B006CD21E /* Distance */,
+				70BC8C992326778C006CD21E /* DistanceTests */,
+				70BC8CA42326778C006CD21E /* DistanceUITests */,
+				70BC8C7F2326778B006CD21E /* Products */,
+				EC921FF1D7E32F28CA5930E3 /* Pods */,
+				D9EAB1160439E4C1B869CEF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70BC8C7F2326778B006CD21E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70BC8C7E2326778B006CD21E /* Distance.app */,
+				70BC8C962326778C006CD21E /* DistanceTests.xctest */,
+				70BC8CA12326778C006CD21E /* DistanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70BC8C802326778B006CD21E /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				70F08810232696D9008919CE /* Controller */,
+				70F0880A23269503008919CE /* lib */,
+				70F0880C23269503008919CE /* Network */,
+				70BC8C812326778B006CD21E /* AppDelegate.h */,
+				70BC8C822326778B006CD21E /* AppDelegate.m */,
+				70BC8C842326778B006CD21E /* ViewController.h */,
+				70BC8C852326778B006CD21E /* ViewController.m */,
+				70BC8C872326778B006CD21E /* Main.storyboard */,
+				70BC8C8A2326778C006CD21E /* Assets.xcassets */,
+				70F0882623269822008919CE /* DistancePch.pch */,
+				70BC8C8C2326778C006CD21E /* LaunchScreen.storyboard */,
+				70BC8C8F2326778C006CD21E /* Info.plist */,
+				70BC8C902326778C006CD21E /* main.m */,
+			);
+			path = Distance;
+			sourceTree = "<group>";
+		};
+		70BC8C992326778C006CD21E /* DistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				70BC8C9A2326778C006CD21E /* DistanceTests.m */,
+				70BC8C9C2326778C006CD21E /* Info.plist */,
+			);
+			path = DistanceTests;
+			sourceTree = "<group>";
+		};
+		70BC8CA42326778C006CD21E /* DistanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70BC8CA52326778C006CD21E /* DistanceUITests.m */,
+				70BC8CA72326778C006CD21E /* Info.plist */,
+			);
+			path = DistanceUITests;
+			sourceTree = "<group>";
+		};
+		70F0880A23269503008919CE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				70F0882723269854008919CE /* tools.h */,
+				70F0882823269854008919CE /* tools.m */,
+				70F0880B23269503008919CE /* UIDefine.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		70F0880C23269503008919CE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				70F0880D23269503008919CE /* TYCommonRequest.h */,
+				70F0880E23269503008919CE /* TYCommonRequest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		70F08810232696D9008919CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70F08816232697D8008919CE /* BaseController */,
+				70F08811232696F2008919CE /* DisLoginController.h */,
+				70F08812232696F2008919CE /* DisLoginController.xml */,
+				70F08813232696F2008919CE /* DisLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		70F08816232697D8008919CE /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				70F08817232697D8008919CE /* FlexBaseWithNaviViewController.h */,
+				70F08818232697D8008919CE /* FlexBaseWithoutNaviViewController.h */,
+				70F08819232697D8008919CE /* FlexBasePresentViewController.h */,
+				70F0881A232697D8008919CE /* TYSPNaviBar */,
+				70F0881E232697D8008919CE /* FlexBaseWithNaviViewController.m */,
+				70F0881F232697D8008919CE /* FlexBasePresentViewController.m */,
+				70F08820232697D8008919CE /* FlexBaseWithoutNaviViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		70F0881A232697D8008919CE /* TYSPNaviBar */ = {
+			isa = PBXGroup;
+			children = (
+				70F0881B232697D8008919CE /* TYSPNaviBar.m */,
+				70F0881C232697D8008919CE /* TYSPNaviBar.xml */,
+				70F0881D232697D8008919CE /* TYSPNaviBar.h */,
+			);
+			path = TYSPNaviBar;
+			sourceTree = "<group>";
+		};
+		D9EAB1160439E4C1B869CEF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B43AF4040EA1474BA445DFA /* libPods-Distance.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC921FF1D7E32F28CA5930E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0866AE48D1F406BA5E1B77C4 /* Pods-Distance.debug.xcconfig */,
+				EBBA4DCCFFDF6EE386A18D9A /* Pods-Distance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70BC8C7D2326778B006CD21E /* Distance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BC8CAA2326778C006CD21E /* Build configuration list for PBXNativeTarget "Distance" */;
+			buildPhases = (
+				E9591DED443A780A9CD16798 /* [CP] Check Pods Manifest.lock */,
+				70BC8C7A2326778B006CD21E /* Sources */,
+				70BC8C7B2326778B006CD21E /* Frameworks */,
+				70BC8C7C2326778B006CD21E /* Resources */,
+				76059B6355648C6B52C7CB8D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Distance;
+			productName = Distance;
+			productReference = 70BC8C7E2326778B006CD21E /* Distance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70BC8C952326778C006CD21E /* DistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BC8CAD2326778C006CD21E /* Build configuration list for PBXNativeTarget "DistanceTests" */;
+			buildPhases = (
+				70BC8C922326778C006CD21E /* Sources */,
+				70BC8C932326778C006CD21E /* Frameworks */,
+				70BC8C942326778C006CD21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70BC8C982326778C006CD21E /* PBXTargetDependency */,
+			);
+			name = DistanceTests;
+			productName = DistanceTests;
+			productReference = 70BC8C962326778C006CD21E /* DistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70BC8CA02326778C006CD21E /* DistanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BC8CB02326778C006CD21E /* Build configuration list for PBXNativeTarget "DistanceUITests" */;
+			buildPhases = (
+				70BC8C9D2326778C006CD21E /* Sources */,
+				70BC8C9E2326778C006CD21E /* Frameworks */,
+				70BC8C9F2326778C006CD21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70BC8CA32326778C006CD21E /* PBXTargetDependency */,
+			);
+			name = DistanceUITests;
+			productName = DistanceUITests;
+			productReference = 70BC8CA12326778C006CD21E /* DistanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70BC8C762326778B006CD21E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "张信涛";
+				TargetAttributes = {
+					70BC8C7D2326778B006CD21E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					70BC8C952326778C006CD21E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 70BC8C7D2326778B006CD21E;
+					};
+					70BC8CA02326778C006CD21E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 70BC8C7D2326778B006CD21E;
+					};
+				};
+			};
+			buildConfigurationList = 70BC8C792326778B006CD21E /* Build configuration list for PBXProject "Distance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70BC8C752326778B006CD21E;
+			productRefGroup = 70BC8C7F2326778B006CD21E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70BC8C7D2326778B006CD21E /* Distance */,
+				70BC8C952326778C006CD21E /* DistanceTests */,
+				70BC8CA02326778C006CD21E /* DistanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70BC8C7C2326778B006CD21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BC8C8E2326778C006CD21E /* LaunchScreen.storyboard in Resources */,
+				70BC8C8B2326778C006CD21E /* Assets.xcassets in Resources */,
+				70F08822232697D9008919CE /* TYSPNaviBar.xml in Resources */,
+				70F08814232696F2008919CE /* DisLoginController.xml in Resources */,
+				70BC8C892326778B006CD21E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C942326778C006CD21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C9F2326778C006CD21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76059B6355648C6B52C7CB8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Distance/Pods-Distance-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Distance/Pods-Distance-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Distance/Pods-Distance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9591DED443A780A9CD16798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Distance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70BC8C7A2326778B006CD21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */,
+				70BC8C862326778B006CD21E /* ViewController.m in Sources */,
+				70BC8C912326778C006CD21E /* main.m in Sources */,
+				70F0882923269854008919CE /* tools.m in Sources */,
+				70F08823232697D9008919CE /* FlexBaseWithNaviViewController.m in Sources */,
+				70F08815232696F2008919CE /* DisLoginController.m in Sources */,
+				70F08824232697D9008919CE /* FlexBasePresentViewController.m in Sources */,
+				70F08821232697D9008919CE /* TYSPNaviBar.m in Sources */,
+				70BC8C832326778B006CD21E /* AppDelegate.m in Sources */,
+				70F0880F23269503008919CE /* TYCommonRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C922326778C006CD21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BC8C9B2326778C006CD21E /* DistanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BC8C9D2326778C006CD21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BC8CA62326778C006CD21E /* DistanceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70BC8C982326778C006CD21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70BC8C7D2326778B006CD21E /* Distance */;
+			targetProxy = 70BC8C972326778C006CD21E /* PBXContainerItemProxy */;
+		};
+		70BC8CA32326778C006CD21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70BC8C7D2326778B006CD21E /* Distance */;
+			targetProxy = 70BC8CA22326778C006CD21E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70BC8C872326778B006CD21E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70BC8C882326778B006CD21E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70BC8C8C2326778C006CD21E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70BC8C8D2326778C006CD21E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70BC8CA82326778C006CD21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70BC8CA92326778C006CD21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70BC8CAB2326778C006CD21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0866AE48D1F406BA5E1B77C4 /* Pods-Distance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Distance/DistancePch.pch";
+				INFOPLIST_FILE = Distance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.Distance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70BC8CAC2326778C006CD21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBBA4DCCFFDF6EE386A18D9A /* Pods-Distance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Distance/DistancePch.pch";
+				INFOPLIST_FILE = Distance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.Distance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70BC8CAE2326778C006CD21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				INFOPLIST_FILE = DistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.DistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Distance.app/Distance";
+			};
+			name = Debug;
+		};
+		70BC8CAF2326778C006CD21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				INFOPLIST_FILE = DistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.DistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Distance.app/Distance";
+			};
+			name = Release;
+		};
+		70BC8CB12326778C006CD21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				INFOPLIST_FILE = DistanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.DistanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Distance;
+			};
+			name = Debug;
+		};
+		70BC8CB22326778C006CD21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 429WZWZX68;
+				INFOPLIST_FILE = DistanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rank.DistanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Distance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70BC8C792326778B006CD21E /* Build configuration list for PBXProject "Distance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BC8CA82326778C006CD21E /* Debug */,
+				70BC8CA92326778C006CD21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BC8CAA2326778C006CD21E /* Build configuration list for PBXNativeTarget "Distance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BC8CAB2326778C006CD21E /* Debug */,
+				70BC8CAC2326778C006CD21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BC8CAD2326778C006CD21E /* Build configuration list for PBXNativeTarget "DistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BC8CAE2326778C006CD21E /* Debug */,
+				70BC8CAF2326778C006CD21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BC8CB02326778C006CD21E /* Build configuration list for PBXNativeTarget "DistanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BC8CB12326778C006CD21E /* Debug */,
+				70BC8CB22326778C006CD21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70BC8C762326778B006CD21E /* Project object */;
+}

@@ -1,0 +1,25 @@
+//
+//  TYSalePlatFormPch.pch
+//  TYSalePlatForm
+//
+//  Created by 张信涛 on 2019/4/24.
+//  Copyright © 2019年 zhangxintao. All rights reserved.
+//
+
+#ifndef TYSalePlatFormPch_pch
+#define TYSalePlatFormPch_pch
+
+#import <FlexLib.h>
+#import <SVProgressHUD.h>
+#import <YYModel.h>
+#import <YTKNetwork.h>
+#import "UIDefine.h"
+#import "tools.h"
+#import "FlexBaseWithNaviViewController.h"
+#import "FlexBaseWithoutNaviViewController.h"
+#import "FlexBasePresentViewController.h"
+//#import "UIScrollView+TouchEven.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TYSalePlatFormPch_pch */
