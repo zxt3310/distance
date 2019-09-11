@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="padding:10/15/0/15" attr="bgColor:white">
+    <UIView layout="padding:15" attr="borderWidth:1,borderWidth:#F1F1F1,borderRadius:8">
+        <UIView layout="padding:5/0/10/20,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:昵称："/>
+            <UILabel name="_nameLb" layout="" attr="fontSize:14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="padding:5/0/10/20,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:距离："/>
+            <UILabel name="_distanceLb" layout="" attr="fontSize:14,color:red,text:"/>
+        </UIView>
+
+        <UIView layout="padding:5/0/10/20,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:上次更新："/>
+            <UILabel name="_tsLb" layout="" attr="fontSize:14,color:#333333,text:"/>
+        </UIView>
+    </UIView>
+</UIView>

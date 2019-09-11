@@ -25,6 +25,21 @@
 		70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F08820232697D8008919CE /* FlexBaseWithoutNaviViewController.m */; };
 		70F0882923269854008919CE /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0882823269854008919CE /* tools.m */; };
 		72C1747D9AA0B1E59B8922F2 /* libPods-Distance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43AF4040EA1474BA445DFA /* libPods-Distance.a */; };
+		B7606D2A2327420B00401830 /* DISUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D292327420B00401830 /* DISUserInfo.m */; };
+		B7606D2F23274D2700401830 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D2E23274D2700401830 /* LoginViewModel.m */; };
+		B7606D3223274FD500401830 /* DisLoginReqest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D3123274FD500401830 /* DisLoginReqest.m */; };
+		B7606D362327722D00401830 /* DisLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D352327722D00401830 /* DisLocationManager.m */; };
+		B7606D3B232777CD00401830 /* MainViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7606D39232777CD00401830 /* MainViewController.xml */; };
+		B7606D3C232777CD00401830 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D3A232777CD00401830 /* MainViewController.m */; };
+		B7606D422327794900401830 /* DistanceListTableView.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7606D402327794900401830 /* DistanceListTableView.xml */; };
+		B7606D432327794900401830 /* DistanceListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D412327794900401830 /* DistanceListTableView.m */; };
+		B7606D472327795B00401830 /* DistanceTableCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7606D452327795B00401830 /* DistanceTableCell.xml */; };
+		B7606D482327795B00401830 /* DistanceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D462327795B00401830 /* DistanceTableCell.m */; };
+		B7606D4C23277A5B00401830 /* DistanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D4B23277A5B00401830 /* DistanceModel.m */; };
+		B7606D4F23277B2900401830 /* DistanceListReqest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D4E23277B2900401830 /* DistanceListReqest.m */; };
+		B7606D5223277D4B00401830 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5123277D4B00401830 /* MainViewModel.m */; };
+		B7606D5523278D4D00401830 /* DisLocationUpdateReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5423278D4D00401830 /* DisLocationUpdateReq.m */; };
+		B7606D5923279C9200401830 /* UIScrollView+MJRefreshEX.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5723279C9100401830 /* UIScrollView+MJRefreshEX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +96,33 @@
 		70F0882623269822008919CE /* DistancePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistancePch.pch; sourceTree = "<group>"; };
 		70F0882723269854008919CE /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		70F0882823269854008919CE /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
+		B7606D282327420B00401830 /* DISUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DISUserInfo.h; sourceTree = "<group>"; };
+		B7606D292327420B00401830 /* DISUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DISUserInfo.m; sourceTree = "<group>"; };
+		B7606D2D23274D2700401830 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		B7606D2E23274D2700401830 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		B7606D3023274FD500401830 /* DisLoginReqest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisLoginReqest.h; sourceTree = "<group>"; };
+		B7606D3123274FD500401830 /* DisLoginReqest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLoginReqest.m; sourceTree = "<group>"; };
+		B7606D342327722D00401830 /* DisLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisLocationManager.h; sourceTree = "<group>"; };
+		B7606D352327722D00401830 /* DisLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLocationManager.m; sourceTree = "<group>"; };
+		B7606D38232777CD00401830 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B7606D39232777CD00401830 /* MainViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainViewController.xml; sourceTree = "<group>"; };
+		B7606D3A232777CD00401830 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B7606D3F2327794900401830 /* DistanceListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceListTableView.h; sourceTree = "<group>"; };
+		B7606D402327794900401830 /* DistanceListTableView.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DistanceListTableView.xml; sourceTree = "<group>"; };
+		B7606D412327794900401830 /* DistanceListTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceListTableView.m; sourceTree = "<group>"; };
+		B7606D442327795B00401830 /* DistanceTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceTableCell.h; sourceTree = "<group>"; };
+		B7606D452327795B00401830 /* DistanceTableCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DistanceTableCell.xml; sourceTree = "<group>"; };
+		B7606D462327795B00401830 /* DistanceTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceTableCell.m; sourceTree = "<group>"; };
+		B7606D4A23277A5B00401830 /* DistanceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceModel.h; sourceTree = "<group>"; };
+		B7606D4B23277A5B00401830 /* DistanceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceModel.m; sourceTree = "<group>"; };
+		B7606D4D23277B2900401830 /* DistanceListReqest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceListReqest.h; sourceTree = "<group>"; };
+		B7606D4E23277B2900401830 /* DistanceListReqest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceListReqest.m; sourceTree = "<group>"; };
+		B7606D5023277D4B00401830 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
+		B7606D5123277D4B00401830 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
+		B7606D5323278D4D00401830 /* DisLocationUpdateReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisLocationUpdateReq.h; sourceTree = "<group>"; };
+		B7606D5423278D4D00401830 /* DisLocationUpdateReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLocationUpdateReq.m; sourceTree = "<group>"; };
+		B7606D5723279C9100401830 /* UIScrollView+MJRefreshEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefreshEX.m"; sourceTree = "<group>"; };
+		B7606D5823279C9100401830 /* UIScrollView+MJRefreshEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefreshEX.h"; sourceTree = "<group>"; };
 		EBBA4DCCFFDF6EE386A18D9A /* Pods-Distance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distance.release.xcconfig"; path = "Target Support Files/Pods-Distance/Pods-Distance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +177,8 @@
 		70BC8C802326778B006CD21E /* Distance */ = {
 			isa = PBXGroup;
 			children = (
+				B7606D332327721300401830 /* location */,
+				B7606D27232741DD00401830 /* user */,
 				70F08810232696D9008919CE /* Controller */,
 				70F0880A23269503008919CE /* lib */,
 				70F0880C23269503008919CE /* Network */,
@@ -173,6 +217,7 @@
 		70F0880A23269503008919CE /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				B7606D5623279C9100401830 /* UIScrollVIew+MJRefreshEx */,
 				70F0882723269854008919CE /* tools.h */,
 				70F0882823269854008919CE /* tools.m */,
 				70F0880B23269503008919CE /* UIDefine.h */,
@@ -185,6 +230,12 @@
 			children = (
 				70F0880D23269503008919CE /* TYCommonRequest.h */,
 				70F0880E23269503008919CE /* TYCommonRequest.m */,
+				B7606D3023274FD500401830 /* DisLoginReqest.h */,
+				B7606D3123274FD500401830 /* DisLoginReqest.m */,
+				B7606D4D23277B2900401830 /* DistanceListReqest.h */,
+				B7606D4E23277B2900401830 /* DistanceListReqest.m */,
+				B7606D5323278D4D00401830 /* DisLocationUpdateReq.h */,
+				B7606D5423278D4D00401830 /* DisLocationUpdateReq.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -192,10 +243,9 @@
 		70F08810232696D9008919CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B7606D37232773C400401830 /* MainController */,
+				B7606D2B23274CC900401830 /* Login */,
 				70F08816232697D8008919CE /* BaseController */,
-				70F08811232696F2008919CE /* DisLoginController.h */,
-				70F08812232696F2008919CE /* DisLoginController.xml */,
-				70F08813232696F2008919CE /* DisLoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +272,97 @@
 				70F0881D232697D8008919CE /* TYSPNaviBar.h */,
 			);
 			path = TYSPNaviBar;
+			sourceTree = "<group>";
+		};
+		B7606D27232741DD00401830 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D282327420B00401830 /* DISUserInfo.h */,
+				B7606D292327420B00401830 /* DISUserInfo.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		B7606D2B23274CC900401830 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D2C23274D0300401830 /* ViewModel */,
+				70F08811232696F2008919CE /* DisLoginController.h */,
+				70F08812232696F2008919CE /* DisLoginController.xml */,
+				70F08813232696F2008919CE /* DisLoginController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B7606D2C23274D0300401830 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D2D23274D2700401830 /* LoginViewModel.h */,
+				B7606D2E23274D2700401830 /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7606D332327721300401830 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D342327722D00401830 /* DisLocationManager.h */,
+				B7606D352327722D00401830 /* DisLocationManager.m */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		B7606D37232773C400401830 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D4923277A4000401830 /* model */,
+				B7606D3E2327790600401830 /* viewModel */,
+				B7606D3D232778F800401830 /* listTable */,
+				B7606D38232777CD00401830 /* MainViewController.h */,
+				B7606D39232777CD00401830 /* MainViewController.xml */,
+				B7606D3A232777CD00401830 /* MainViewController.m */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		B7606D3D232778F800401830 /* listTable */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D3F2327794900401830 /* DistanceListTableView.h */,
+				B7606D402327794900401830 /* DistanceListTableView.xml */,
+				B7606D412327794900401830 /* DistanceListTableView.m */,
+				B7606D442327795B00401830 /* DistanceTableCell.h */,
+				B7606D452327795B00401830 /* DistanceTableCell.xml */,
+				B7606D462327795B00401830 /* DistanceTableCell.m */,
+			);
+			path = listTable;
+			sourceTree = "<group>";
+		};
+		B7606D3E2327790600401830 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D5023277D4B00401830 /* MainViewModel.h */,
+				B7606D5123277D4B00401830 /* MainViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		B7606D4923277A4000401830 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D4A23277A5B00401830 /* DistanceModel.h */,
+				B7606D4B23277A5B00401830 /* DistanceModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B7606D5623279C9100401830 /* UIScrollVIew+MJRefreshEx */ = {
+			isa = PBXGroup;
+			children = (
+				B7606D5723279C9100401830 /* UIScrollView+MJRefreshEX.m */,
+				B7606D5823279C9100401830 /* UIScrollView+MJRefreshEX.h */,
+			);
+			path = "UIScrollVIew+MJRefreshEx";
 			sourceTree = "<group>";
 		};
 		D9EAB1160439E4C1B869CEF7 /* Frameworks */ = {
@@ -346,11 +487,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7606D422327794900401830 /* DistanceListTableView.xml in Resources */,
 				70BC8C8E2326778C006CD21E /* LaunchScreen.storyboard in Resources */,
+				B7606D3B232777CD00401830 /* MainViewController.xml in Resources */,
 				70BC8C8B2326778C006CD21E /* Assets.xcassets in Resources */,
 				70F08822232697D9008919CE /* TYSPNaviBar.xml in Resources */,
 				70F08814232696F2008919CE /* DisLoginController.xml in Resources */,
 				70BC8C892326778B006CD21E /* Main.storyboard in Resources */,
+				B7606D472327795B00401830 /* DistanceTableCell.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,15 +562,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */,
+				B7606D5523278D4D00401830 /* DisLocationUpdateReq.m in Sources */,
 				70BC8C862326778B006CD21E /* ViewController.m in Sources */,
 				70BC8C912326778C006CD21E /* main.m in Sources */,
+				B7606D5223277D4B00401830 /* MainViewModel.m in Sources */,
 				70F0882923269854008919CE /* tools.m in Sources */,
 				70F08823232697D9008919CE /* FlexBaseWithNaviViewController.m in Sources */,
 				70F08815232696F2008919CE /* DisLoginController.m in Sources */,
+				B7606D4C23277A5B00401830 /* DistanceModel.m in Sources */,
+				B7606D5923279C9200401830 /* UIScrollView+MJRefreshEX.m in Sources */,
 				70F08824232697D9008919CE /* FlexBasePresentViewController.m in Sources */,
+				B7606D2A2327420B00401830 /* DISUserInfo.m in Sources */,
+				B7606D2F23274D2700401830 /* LoginViewModel.m in Sources */,
 				70F08821232697D9008919CE /* TYSPNaviBar.m in Sources */,
 				70BC8C832326778B006CD21E /* AppDelegate.m in Sources */,
+				B7606D482327795B00401830 /* DistanceTableCell.m in Sources */,
+				B7606D4F23277B2900401830 /* DistanceListReqest.m in Sources */,
+				B7606D362327722D00401830 /* DisLocationManager.m in Sources */,
+				B7606D432327794900401830 /* DistanceListTableView.m in Sources */,
 				70F0880F23269503008919CE /* TYCommonRequest.m in Sources */,
+				B7606D3C232777CD00401830 /* MainViewController.m in Sources */,
+				B7606D3223274FD500401830 /* DisLoginReqest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +761,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Distance/DistancePch.pch";
 				INFOPLIST_FILE = Distance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,6 +784,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Distance/DistancePch.pch";
 				INFOPLIST_FILE = Distance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

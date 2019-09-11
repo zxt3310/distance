@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^resblock)(id obj);
+
 @interface TYCommonRequest : YTKRequest <YTKRequestDelegate>
+
+@property resblock res;
+
+- (instancetype) initWithParam:(id)param;
+
+- (void)startRequest;
 
 @end
 

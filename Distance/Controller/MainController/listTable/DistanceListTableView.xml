@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UIView layout="flex:1" attr="bgColor:white">
-    
+    <UITableView name="_listTable" layout="flex:1" attr=""/>
 </UIView>

@@ -9,14 +9,30 @@
 #import "TYCommonRequest.h"
 
 @implementation TYCommonRequest
-
-- (instancetype)init
 {
+    id paramm;
+}
+
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        self.delegate = self;
+//    }
+//    return self;
+//}
+
+- (instancetype) initWithParam:(id)param{
     self = [super init];
     if (self) {
+        paramm = [param yy_modelToJSONObject];
         self.delegate = self;
     }
     return self;
+}
+
+- (id)requestArgument{
+    return paramm;
 }
 
 //- (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary{
@@ -45,9 +61,17 @@
 //    }
 }
 
+- (void)startRequest{
+    
+}
+
+- (YTKResponseSerializerType)responseSerializerType{
+    return YTKResponseSerializerTypeJSON;
+}
+
 - (id)jsonValidator{
     return @{
-             @"ret":[NSNumber class],
+             @"err":[NSNumber class],
              @"data":[NSObject class]
              };
 }

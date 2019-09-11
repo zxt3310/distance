@@ -59,6 +59,7 @@
 
 
 /* NSUserDefault */
+#define LocalUser @"userInfo"
 
 ///微信支付
 #define WX_APP_ID @"wxe93fbccde5593e60"

@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "DisLoginController.h"
+#import "MainViewController.h"
+#import "DisLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    DISStaticObj *obj = [DISStaticObj sharedObj];
+    DISUserInfo *info = [DISUserInfo sharedInfo];
+    
+    obj.loginVC = [[UINavigationController alloc] initWithRootViewController:[[DisLoginController alloc] init]];
+    obj.mainVC = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    
+    if (info.userid) {
+        [self.window setRootViewController:obj.mainVC];
+    }else{
+        [self.window setRootViewController:obj.loginVC];
+    }
+    
+    [self.window makeKeyAndVisible];
+    
+    [YTKNetworkConfig sharedConfig].baseUrl = Dis_Api_domain;
+    
+    [[DisLocationManager sharedManager] beginUpdateLocation];
+    
     return YES;
 }
 

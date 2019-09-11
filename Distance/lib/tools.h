@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@interface DISStaticObj : NSObject
+@property id loginVC;
+@property id mainVC;
++ (instancetype) sharedObj;
+@end
+
 @interface TYSaleCookieTool : NSObject
 
 /**
@@ -57,6 +63,7 @@ UIViewController* _topViewController (UIViewController* vc);
 NSString* stringOfNumber(NSInteger number);
 NSString* stringOfDate(NSDate *date);
 NSString* stringOfFloat(float number);
+NSString* stringOfDouble(double number);
 //md5
 NSString * md5HexDigest(NSString *input);
 //验证手机号

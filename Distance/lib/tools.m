@@ -10,6 +10,18 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <Photos/Photos.h>
 
+@implementation DISStaticObj
+
++ (instancetype) sharedObj{
+    static DISStaticObj *obj = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        obj = [[self alloc] init];
+    });
+    return obj;
+}
+
+@end
 
 //cookie
 @implementation TYSaleCookieTool
@@ -110,6 +122,10 @@ NSString* stringOfNumber(NSInteger number){
 
 NSString* stringOfFloat(float number){
     return [NSString stringWithFormat:@"%.2f",number];
+}
+
+NSString* stringOfDouble(double number){
+    return [NSString stringWithFormat:@"%0.6f",number];
 }
 
 NSString* stringWithTodayDate(void){

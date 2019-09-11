@@ -15,9 +15,11 @@
 #import <YTKNetwork.h>
 #import "UIDefine.h"
 #import "tools.h"
+#import "DISUserInfo.h"
 #import "FlexBaseWithNaviViewController.h"
 #import "FlexBaseWithoutNaviViewController.h"
 #import "FlexBasePresentViewController.h"
+#import "UIScrollView+MJRefreshEX.h"
 //#import "UIScrollView+TouchEven.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
