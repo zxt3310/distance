@@ -25,6 +25,8 @@
 		70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F08820232697D8008919CE /* FlexBaseWithoutNaviViewController.m */; };
 		70F0882923269854008919CE /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0882823269854008919CE /* tools.m */; };
 		72C1747D9AA0B1E59B8922F2 /* libPods-Distance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B43AF4040EA1474BA445DFA /* libPods-Distance.a */; };
+		B72287D5237E3A6800AE345D /* BGTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B72287D4237E3A6800AE345D /* BGTaskManager.m */; };
+		B72287D8237E77C700AE345D /* BgDispatchTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B72287D7237E77C700AE345D /* BgDispatchTimer.m */; };
 		B7606D2A2327420B00401830 /* DISUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D292327420B00401830 /* DISUserInfo.m */; };
 		B7606D2F23274D2700401830 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D2E23274D2700401830 /* LoginViewModel.m */; };
 		B7606D3223274FD500401830 /* DisLoginReqest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D3123274FD500401830 /* DisLoginReqest.m */; };
@@ -40,6 +42,8 @@
 		B7606D5223277D4B00401830 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5123277D4B00401830 /* MainViewModel.m */; };
 		B7606D5523278D4D00401830 /* DisLocationUpdateReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5423278D4D00401830 /* DisLocationUpdateReq.m */; };
 		B7606D5923279C9200401830 /* UIScrollView+MJRefreshEX.m in Sources */ = {isa = PBXBuildFile; fileRef = B7606D5723279C9100401830 /* UIScrollView+MJRefreshEX.m */; };
+		B7E504752373FAE600B28D20 /* DisLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E504742373FAE600B28D20 /* DisLog.m */; };
+		B7E50478237407C900B28D20 /* PRMovePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E50477237407C900B28D20 /* PRMovePathViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		70F0882623269822008919CE /* DistancePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistancePch.pch; sourceTree = "<group>"; };
 		70F0882723269854008919CE /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		70F0882823269854008919CE /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
+		B72287D3237E3A6800AE345D /* BGTaskManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGTaskManager.h; sourceTree = "<group>"; };
+		B72287D4237E3A6800AE345D /* BGTaskManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGTaskManager.m; sourceTree = "<group>"; };
+		B72287D6237E77C700AE345D /* BgDispatchTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BgDispatchTimer.h; sourceTree = "<group>"; };
+		B72287D7237E77C700AE345D /* BgDispatchTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BgDispatchTimer.m; sourceTree = "<group>"; };
 		B7606D282327420B00401830 /* DISUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DISUserInfo.h; sourceTree = "<group>"; };
 		B7606D292327420B00401830 /* DISUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DISUserInfo.m; sourceTree = "<group>"; };
 		B7606D2D23274D2700401830 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 		B7606D5423278D4D00401830 /* DisLocationUpdateReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLocationUpdateReq.m; sourceTree = "<group>"; };
 		B7606D5723279C9100401830 /* UIScrollView+MJRefreshEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefreshEX.m"; sourceTree = "<group>"; };
 		B7606D5823279C9100401830 /* UIScrollView+MJRefreshEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefreshEX.h"; sourceTree = "<group>"; };
+		B7E504732373FAE600B28D20 /* DisLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisLog.h; sourceTree = "<group>"; };
+		B7E504742373FAE600B28D20 /* DisLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisLog.m; sourceTree = "<group>"; };
+		B7E50476237407C900B28D20 /* PRMovePathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRMovePathViewController.h; sourceTree = "<group>"; };
+		B7E50477237407C900B28D20 /* PRMovePathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRMovePathViewController.m; sourceTree = "<group>"; };
 		EBBA4DCCFFDF6EE386A18D9A /* Pods-Distance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distance.release.xcconfig"; path = "Target Support Files/Pods-Distance/Pods-Distance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +189,8 @@
 		70BC8C802326778B006CD21E /* Distance */ = {
 			isa = PBXGroup;
 			children = (
+				B72287D2237E3A3100AE345D /* Background */,
+				B7E504722373FAA900B28D20 /* log */,
 				B7606D332327721300401830 /* location */,
 				B7606D27232741DD00401830 /* user */,
 				70F08810232696D9008919CE /* Controller */,
@@ -274,6 +288,17 @@
 			path = TYSPNaviBar;
 			sourceTree = "<group>";
 		};
+		B72287D2237E3A3100AE345D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				B72287D3237E3A6800AE345D /* BGTaskManager.h */,
+				B72287D4237E3A6800AE345D /* BGTaskManager.m */,
+				B72287D6237E77C700AE345D /* BgDispatchTimer.h */,
+				B72287D7237E77C700AE345D /* BgDispatchTimer.m */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
 		B7606D27232741DD00401830 /* user */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +390,17 @@
 			path = "UIScrollVIew+MJRefreshEx";
 			sourceTree = "<group>";
 		};
+		B7E504722373FAA900B28D20 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				B7E504732373FAE600B28D20 /* DisLog.h */,
+				B7E504742373FAE600B28D20 /* DisLog.m */,
+				B7E50476237407C900B28D20 /* PRMovePathViewController.h */,
+				B7E50477237407C900B28D20 /* PRMovePathViewController.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
 		D9EAB1160439E4C1B869CEF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +487,11 @@
 				TargetAttributes = {
 					70BC8C7D2326778B006CD21E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					70BC8C952326778C006CD21E = {
 						CreatedOnToolsVersion = 10.1;
@@ -562,8 +603,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F08825232697D9008919CE /* FlexBaseWithoutNaviViewController.m in Sources */,
+				B72287D5237E3A6800AE345D /* BGTaskManager.m in Sources */,
 				B7606D5523278D4D00401830 /* DisLocationUpdateReq.m in Sources */,
+				B7E50478237407C900B28D20 /* PRMovePathViewController.m in Sources */,
 				70BC8C862326778B006CD21E /* ViewController.m in Sources */,
+				B7E504752373FAE600B28D20 /* DisLog.m in Sources */,
 				70BC8C912326778C006CD21E /* main.m in Sources */,
 				B7606D5223277D4B00401830 /* MainViewModel.m in Sources */,
 				70F0882923269854008919CE /* tools.m in Sources */,
@@ -580,6 +624,7 @@
 				B7606D4F23277B2900401830 /* DistanceListReqest.m in Sources */,
 				B7606D362327722D00401830 /* DisLocationManager.m in Sources */,
 				B7606D432327794900401830 /* DistanceListTableView.m in Sources */,
+				B72287D8237E77C700AE345D /* BgDispatchTimer.m in Sources */,
 				70F0880F23269503008919CE /* TYCommonRequest.m in Sources */,
 				B7606D3C232777CD00401830 /* MainViewController.m in Sources */,
 				B7606D3223274FD500401830 /* DisLoginReqest.m in Sources */,

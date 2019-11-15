@@ -82,3 +82,10 @@ UIAlertController* alertInitWithTitle (NSString *title,NSString *message,NSStrin
 typedef void(^authorConfirmCallBack)(void);
 //检查并请求相册授权
 void requestPhotoLibraryStatus(authorConfirmCallBack confirm);
+
+
+@interface MovePoint : NSObject
+@property double lot;
+@property double lat;
+@end
+

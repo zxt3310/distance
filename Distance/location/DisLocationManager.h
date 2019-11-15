@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)beginUpdateLocation;
 - (void)stopUpdateLocation;
 - (void)startLocation;
+
+- (void)applicationEnterBackground;
 @end
 
 NS_ASSUME_NONNULL_END

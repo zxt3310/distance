@@ -21,8 +21,10 @@
 - (void)startRequest{
     [self startWithCompletionBlockWithSuccess:^(DisLocationUpdateReq *request){
         NSLog(@"上传成功");
+        [DisLog Write:@"上传成功" To:LOG_User];
     } failure:^(DisLocationUpdateReq *request){
         DLog(@"上传失败 %@",request.responseString);
+        [DisLog Write:request.responseString To:LOG_User];
     }];
 }
 

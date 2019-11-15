@@ -35,8 +35,6 @@
     [_listTable.listTable addHeaderWithHeaderWithBeginRefresh:NO animation:YES refreshBlock:^(NSInteger page){
         [[DisLocationManager sharedManager] startLocation];
     }];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated{

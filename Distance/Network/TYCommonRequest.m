@@ -69,11 +69,12 @@
     return YTKResponseSerializerTypeJSON;
 }
 
-- (id)jsonValidator{
-    return @{
-             @"err":[NSNumber class],
-             @"data":[NSObject class]
-             };
-}
+//- (id)jsonValidator{
+//    return @{
+//             @"err":[NSNumber class],
+//             @"data":[NSObject class],
+//             @"errmsg":[NSObject class]
+//             };
+//}
 
 @end

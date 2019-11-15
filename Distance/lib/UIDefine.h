@@ -9,6 +9,7 @@
 #ifndef UIDefine_h
 #define UIDefine_h
 #import <UIKit/UIKit.h>
+#import "DisLog.h"
 
 /*请求错误码*/
 #define TokenInvalid 999   //token过期
@@ -69,6 +70,11 @@
 #else
 # define DLog(...);
 #endif
+
+/*日志*/
+#define LOG_Loc @"locate.txt"
+#define LOG_Weakup @"wakeByOs.txt"
+#define LOG_User @"userActive.txt"
 
 #endif /* UIDefine_h */
 

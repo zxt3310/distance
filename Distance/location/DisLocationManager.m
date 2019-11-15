@@ -9,6 +9,8 @@
 #import "DisLocationManager.h"
 #import <CoreLocation/CoreLocation.h>
 #import "DisLocationUpdateReq.h"
+#import "BgDispatchTimer.h"
+#import "BGTaskManager.h"
 
 @interface DisLocationManager ()<CLLocationManagerDelegate>
 
@@ -29,19 +31,25 @@
     dispatch_once(&onceToken, ^{
         singleManager = [[self alloc] init];
         singleManager.manager = [[CLLocationManager alloc] init];
-        singleManager.manager.activityType = CLActivityTypeFitness;
-        singleManager.manager.desiredAccuracy = kCLLocationAccuracyBest;
-        singleManager.manager.distanceFilter = kCLDistanceFilterNone;
+        singleManager.manager.activityType = CLActivityTypeOther;
+        singleManager.manager.allowsBackgroundLocationUpdates = YES;
     });
     return singleManager;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(applicationEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    }
+    return self;
+}
+
 - (void)beginUpdateLocation{
     self.manager.delegate = self;
-    [self.manager requestWhenInUseAuthorization];
-    timer = [NSTimer timerWithTimeInterval:60 target:self selector:@selector(startLocation) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    [timer setFireDate:[NSDate date]];
+    [self.manager requestAlwaysAuthorization];
+    [self startLocation];
 }
 
 - (void)stopUpdateLocation{
@@ -52,7 +60,10 @@
 }
 
 - (void)startLocation{
-    [self.manager requestLocation];
+    if ([CLLocationManager significantLocationChangeMonitoringAvailable]) {
+        [self.manager startMonitoringSignificantLocationChanges];
+        //[self.manager startUpdatingLocation];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
@@ -66,16 +77,62 @@
             NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[DISUserInfo sharedInfo].userid,@"userid",
                                                                             stringOfDouble(location.coordinate.latitude),@"lat",
                                  stringOfDouble(location.coordinate.longitude),@"lng",nil];
-            
+
             DisLocationUpdateReq *req = [[DisLocationUpdateReq alloc] initWithParam:dic];
             [req startRequest];
             self.upDate = [NSDate date];
+        
         }
+    }
+    
+    for (CLLocation *loc in locations) {
+        double lot = loc.coordinate.longitude;
+        double lat = loc.coordinate.latitude;
+        NSString *str = [NSString stringWithFormat:@"{\"lot\":%f,\"lat\":%f}",lot,lat];
+        [DisLog WriteLocate:str];
+        
+        [DisLog Write:[NSString stringWithFormat:@"记录位置信息%@",str] To:LOG_User];
     }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     
 }
+
+- (void)applicationEnterBackground{
+    
+    [DisLog Write:@"切换到后台" To:LOG_User];
+    
+    [BgDispatchTimer scheduleDispatchTimerWithName:@"upload" timeInterval:120 queue:nil repeats:YES action:^{
+        NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *strPath = [documentsPath stringByAppendingPathComponent:LOG_Loc];
+        BOOL exist = [[[NSFileManager alloc] init] fileExistsAtPath:strPath];
+        if (exist) {
+            NSString *pathStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+            pathStr = [pathStr stringByAppendingString:@"]"];
+            pathStr = [@"[" stringByAppendingString:pathStr];
+            NSArray *ary = [NSArray yy_modelArrayWithClass:[MovePoint class] json:[NSJSONSerialization JSONObjectWithData:[pathStr dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil]];
+            MovePoint *loc = [ary lastObject];
+            
+            NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[DISUserInfo sharedInfo].userid,@"userid",
+                                 stringOfDouble(loc.lat),@"lat",
+                                 stringOfDouble(loc.lot),@"lng",nil];
+            
+            DisLocationUpdateReq *req = [[DisLocationUpdateReq alloc] initWithParam:dic];
+            [req startRequest];
+            
+            BGTaskManager *manager = [BGTaskManager defaultManager];
+            
+            [manager beginNewBackgroundTask];
+        }
+    }];
+    
+    BGTaskManager *manager = [BGTaskManager defaultManager];
+    
+    [manager beginNewBackgroundTask];
+}
+
+
+
 
 @end

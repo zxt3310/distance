@@ -112,7 +112,7 @@ UIViewController* _topViewController (UIViewController* vc) {
 NSString *stringOfDate(NSDate *date){
     NSDateFormatter *format = [[NSDateFormatter alloc] init];
     format.timeZone = [NSTimeZone localTimeZone];
-    format.dateFormat = @"yyyy-MM-dd";
+    format.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     return [format stringFromDate:date];
 }
 
@@ -331,3 +331,6 @@ void requestPhotoLibraryStatus(authorConfirmCallBack confirm){
     }
 }
 
+
+@implementation MovePoint
+@end

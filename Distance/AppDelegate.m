@@ -10,6 +10,7 @@
 #import "DisLoginController.h"
 #import "MainViewController.h"
 #import "DisLocationManager.h"
+//#import "BGTaskManager.h"
 
 @interface AppDelegate ()
 
@@ -36,6 +37,13 @@
     [YTKNetworkConfig sharedConfig].baseUrl = Dis_Api_domain;
     
     [[DisLocationManager sharedManager] beginUpdateLocation];
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+        [DisLog Write:@"系统后台唤醒" To:LOG_Weakup];
+        // do something，这里就可以再次调用startUpdatingLocation，开启精确定位啦
+        [[DisLocationManager sharedManager] applicationEnterBackground];
+        
+    }
     
     return YES;
 }
@@ -65,6 +73,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [DisLog Write:@"啊啦啦，被系统杀死了" To:LOG_User];
 }
 
 

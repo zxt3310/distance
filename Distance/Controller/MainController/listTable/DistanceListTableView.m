@@ -8,6 +8,7 @@
 
 #import "DistanceListTableView.h"
 #import "DistanceTableCell.h"
+#import "PRMovePathViewController.h"
 
 @interface DistanceListTableView() <UITableViewDelegate,UITableViewDataSource>
 
@@ -38,6 +39,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.distanceList.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PRMovePathViewController *vc = [[PRMovePathViewController alloc] init];
+    [topViewController().navigationController pushViewController:vc animated:YES];
 }
 
 - (void)reload{
