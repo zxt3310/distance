@@ -20,6 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+    
     DISStaticObj *obj = [DISStaticObj sharedObj];
     DISUserInfo *info = [DISUserInfo sharedInfo];
     
@@ -41,7 +44,7 @@
     if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
         [DisLog Write:@"系统后台唤醒" To:LOG_Weakup];
         // do something，这里就可以再次调用startUpdatingLocation，开启精确定位啦
-        [[DisLocationManager sharedManager] applicationEnterBackground];
+        //[[DisLocationManager sharedManager] applicationEnterBackground];
         
     }
     
@@ -76,5 +79,12 @@
     [DisLog Write:@"啊啦啦，被系统杀死了" To:LOG_User];
 }
 
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+    [[DisLocationManager sharedManager] requestLocation];
+    [[DisLocationManager sharedManager] uploadLocation];
+    
+    NSLog(@"fetch了 注意了");
+    completionHandler(UIBackgroundFetchResultNewData);
+}
 
 @end

@@ -19,8 +19,8 @@
     if (!exist) {
         // 2.创建要存储的内容：字符串
         isOk = [content writeToFile:strPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-        NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
-        NSLog(@"%@", newStr);
+        //NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+        //NSLog(@"%@", newStr);
     }else{
         NSFileHandle *fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:strPath];
         [fileHandle seekToEndOfFile];
@@ -28,8 +28,8 @@
         [fileHandle writeData:[addStr dataUsingEncoding:NSUTF8StringEncoding]];
         [fileHandle closeFile];
         
-        NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
-        NSLog(@"%@", newStr);
+        //NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+        //NSLog(@"%@", newStr);
     }
     
     return isOk;
@@ -46,8 +46,8 @@
         // 2.创建要存储的内容：字符串
         str = [NSString stringWithFormat:@"%@-------记录日志-------%@",stringOfDate([NSDate date]),content];
         isOk = [str writeToFile:strPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-        NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
-        NSLog(@"%@", newStr);
+        //NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+        //NSLog(@"%@", newStr);
     }else{
         NSFileHandle *fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:strPath];
         [fileHandle seekToEndOfFile];
@@ -55,8 +55,8 @@
         [fileHandle writeData:[addStr dataUsingEncoding:NSUTF8StringEncoding]];
         [fileHandle closeFile];
         
-        NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
-        NSLog(@"%@", newStr);
+//        NSString *newStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+//        NSLog(@"%@", newStr);
     }
     
     return isOk;

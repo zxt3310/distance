@@ -7,6 +7,7 @@
 //
 
 #import "BGTaskManager.h"
+#import "DisLocationManager.h"
 
 @interface BGTaskManager ()
 @property (nonatomic,strong) NSMutableArray *bgTaskIdList;///<后台任务数组
@@ -46,23 +47,30 @@ static BGTaskManager *manager = nil;
     {
         bgTaskId = [application beginBackgroundTaskWithExpirationHandler:^{
             NSLog(@"bgTask 过期 %lu",(unsigned long)bgTaskId);
-            [self.bgTaskIdList removeObject:@(bgTaskId)];//过期任务从后台数组删除
+            [DisLog Write:[NSString stringWithFormat:@"bgTask 过期 %lu,重启后台任务",(unsigned long)bgTaskId] To:LOG_Weakup];
+//            [self.bgTaskIdList removeObject:@(bgTaskId)];//过期任务从后台数组删除
             bgTaskId = UIBackgroundTaskInvalid;
             [application endBackgroundTask:bgTaskId];
+            //[self endBackGroundTask:NO];
+            [[DisLocationManager sharedManager] applicationEnterBackground];
         }];
+        
+        NSLog(@"开启新任务  %lu",(unsigned long)bgTaskId);
     }
-    //如果上次记录的后台任务已经失效了，就记录最新的任务为主任务
-    if (_masterTaskId == UIBackgroundTaskInvalid) {
-        self.masterTaskId = bgTaskId;
-        NSLog(@"开启后台任务 %lu",(unsigned long)bgTaskId);
-    }
-    else //如果上次开启的后台任务还未结束，就提前关闭了，使用最新的后台任务
-    {
-        //add this id to our list
-        NSLog(@"保持后台任务 %lu", (unsigned long)bgTaskId);
-        [self.bgTaskIdList addObject:@(bgTaskId)];
-        //[self endBackGroundTask:NO];//留下最新创建的后台任务
-    }
+//    //如果上次记录的后台任务已经失效了，就记录最新的任务为主任务
+//    if (_masterTaskId == UIBackgroundTaskInvalid) {
+//        self.masterTaskId = bgTaskId;
+//        NSLog(@"开启后台任务 %lu",(unsigned long)bgTaskId);
+//        [DisLog Write:[NSString stringWithFormat:@"开启  后台任务 %lu",(unsigned long)bgTaskId] To:LOG_Weakup];
+//    }
+//    else //如果上次开启的后台任务还未结束，就提前关闭了，使用最新的后台任务
+//    {
+//        //add this id to our list
+//        NSLog(@"保持  后台任务 %lu", (unsigned long)bgTaskId);
+//        [self.bgTaskIdList addObject:@(bgTaskId)];
+//        [DisLog Write:[NSString stringWithFormat:@"保持  后台任务 %lu",(unsigned long)bgTaskId] To:LOG_Weakup];
+//        //[self endBackGroundTask:NO];//留下最新创建的后台任务
+//    }
     
     return bgTaskId;
 }

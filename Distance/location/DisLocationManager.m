@@ -32,7 +32,6 @@
         singleManager = [[self alloc] init];
         singleManager.manager = [[CLLocationManager alloc] init];
         singleManager.manager.activityType = CLActivityTypeOther;
-        singleManager.manager.allowsBackgroundLocationUpdates = YES;
     });
     return singleManager;
 }
@@ -41,7 +40,7 @@
 {
     self = [super init];
     if (self) {
-        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(applicationEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
+        //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(applicationEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     }
     return self;
 }
@@ -57,6 +56,12 @@
         [timer setFireDate:[NSDate distantFuture]];
         [timer invalidate];
     }
+}
+
+- (void)requestLocation{
+    self.manager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.manager.distanceFilter = 0;
+    [self.manager requestLocation];
 }
 
 - (void)startLocation{
@@ -101,9 +106,17 @@
 
 - (void)applicationEnterBackground{
     
-    [DisLog Write:@"切换到后台" To:LOG_User];
+    [DisLog Write:@"启动后台任务" To:LOG_User];
     
-    [BgDispatchTimer scheduleDispatchTimerWithName:@"upload" timeInterval:120 queue:nil repeats:YES action:^{
+    BGTaskManager *manager = [BGTaskManager defaultManager];
+    
+    [manager beginNewBackgroundTask];
+    
+//    [BgDispatchTimer cancelAllTimer];
+    
+    //[BgDispatchTimer scheduleDispatchTimerWithName:@"upload" timeInterval:120 queue:nil repeats:YES action:^{
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(120 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         NSString *strPath = [documentsPath stringByAppendingPathComponent:LOG_Loc];
         BOOL exist = [[[NSFileManager alloc] init] fileExistsAtPath:strPath];
@@ -121,15 +134,36 @@
             DisLocationUpdateReq *req = [[DisLocationUpdateReq alloc] initWithParam:dic];
             [req startRequest];
             
-            BGTaskManager *manager = [BGTaskManager defaultManager];
             
-            [manager beginNewBackgroundTask];
         }
-    }];
+    });
     
-    BGTaskManager *manager = [BGTaskManager defaultManager];
     
-    [manager beginNewBackgroundTask];
+    //}];
+    
+//    BGTaskManager *manager = [BGTaskManager defaultManager];
+//
+//    [manager beginNewBackgroundTask];
+}
+
+- (void)uploadLocation{
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *strPath = [documentsPath stringByAppendingPathComponent:LOG_Loc];
+    BOOL exist = [[[NSFileManager alloc] init] fileExistsAtPath:strPath];
+    if (exist) {
+        NSString *pathStr = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+        pathStr = [pathStr stringByAppendingString:@"]"];
+        pathStr = [@"[" stringByAppendingString:pathStr];
+        NSArray *ary = [NSArray yy_modelArrayWithClass:[MovePoint class] json:[NSJSONSerialization JSONObjectWithData:[pathStr dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil]];
+        MovePoint *loc = [ary lastObject];
+        
+        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[DISUserInfo sharedInfo].userid,@"userid",
+                             stringOfDouble(loc.lat),@"lat",
+                             stringOfDouble(loc.lot),@"lng",nil];
+        
+        DisLocationUpdateReq *req = [[DisLocationUpdateReq alloc] initWithParam:dic];
+        [req startRequest];
+    }
 }
 
 
