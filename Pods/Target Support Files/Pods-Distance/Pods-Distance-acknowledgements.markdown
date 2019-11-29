@@ -231,11 +231,6 @@ SOFTWARE.
 
 
 
-## WechatOpenSDK
-
-Copyright 2019 tencent.com. All rights reserved.
-
-
 ## YTKNetwork
 
 Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku

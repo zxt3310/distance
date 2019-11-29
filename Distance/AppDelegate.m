@@ -82,7 +82,7 @@
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
     [[DisLocationManager sharedManager] requestLocation];
     [[DisLocationManager sharedManager] uploadLocation];
-    
+    [DisLog Write:@"BackgroundFetch of IOS system" To:LOG_Weakup];
     NSLog(@"fetch了 注意了");
     completionHandler(UIBackgroundFetchResultNewData);
 }
