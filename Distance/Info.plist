@@ -54,5 +54,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MOBAppkey</key>
+	<string>2d495a32b40cc</string>
+	<key>MOBAppSecret</key>
+	<string>93304e2837e1351d473ade5fc97a6e71</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>wechat</string>
+	</array>
 </dict>
 </plist>

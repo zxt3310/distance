@@ -10,6 +10,7 @@
 #import "DisLoginController.h"
 #import "MainViewController.h"
 #import "DisLocationManager.h"
+#import <ShareSDK/ShareSDK.h>
 //#import "BGTaskManager.h"
 
 @interface AppDelegate ()
@@ -40,6 +41,11 @@
     [YTKNetworkConfig sharedConfig].baseUrl = Dis_Api_domain;
     
     [[DisLocationManager sharedManager] beginUpdateLocation];
+    
+    [ShareSDK registPlatforms:^(SSDKRegister *platformRegister){
+        
+    }];
+    
     
     if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
         [DisLog Write:@"系统后台唤醒" To:LOG_Weakup];
